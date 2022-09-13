@@ -1,7 +1,7 @@
 {
-  "name": "analog-clock-sww976-test",
-  "version": "0.1.1",
-  "private": false,
+  "name": "analog-clock",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -18,24 +18,12 @@
     "typescript": "^4.7.2",
     "web-vitals": "^2.1.4"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "publish:npm": "(if exist dist rmdir /s /q dist) && mkdir dist && babel ./src/components -d dist --copy-files"
+    "eject": "react-scripts eject"
   },
-  "main": "dist/Clock.tsx",
-  "module": "dist/Clock.tsx",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -55,8 +43,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/preset-react": "^7.17.12",
     "@types/styled-components": "^5.1.25"
   }
 }
